@@ -11,20 +11,24 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     
-
-    
+    @IBOutlet weak var shouldShowPlutoSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
     }
     
     @IBAction func changeShouldShowPluto(_ sender: UISwitch) {
         let userDefaults = UserDefaults.standard
-        UserDefaults.set
+        userDefaults.set(sender.isOn, forKey: String.shouldShowPlutoKey)
     }
 
+    
+    private func updateViews() {
+        let userDefaults = UserDefaults.standard
+        shouldShowPlutoSwitch.isOn = userDefaults.bool(forKey: String.shouldShowPlutoKey)
+    }
     /*
     // MARK: - Navigation
 

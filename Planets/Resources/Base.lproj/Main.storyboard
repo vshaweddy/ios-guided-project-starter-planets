@@ -33,16 +33,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-zf-4z4">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Q5R-nh-xKA">
-                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xUB-zT-2bw">
-                                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVS-As-t5v">
-                                                            <rect key="frame" x="0.0" y="140" width="140" height="20"/>
+                                                            <rect key="frame" x="0.0" y="100" width="100" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="m1t-ZD-Jva"/>
                                                             </constraints>
@@ -111,7 +111,7 @@
         <!--Settings-->
         <scene sceneID="apQ-vm-R3u">
             <objects>
-                <viewController title="Settings" id="gVM-JK-HK2" sceneMemberID="viewController">
+                <viewController title="Settings" id="gVM-JK-HK2" customClass="SettingsViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jqr-Fp-uTj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,10 +125,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZt-qB-3Wz">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eZt-qB-3Wz">
                                         <rect key="frame" x="296" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="changeShouldShowPluto:" destination="xq6-Ap-oI8" eventType="valueChanged" id="rW8-DA-fbq"/>
+                                            <action selector="changeShouldShowPluto:" destination="gVM-JK-HK2" eventType="valueChanged" id="Lph-1d-mgq"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -157,6 +157,9 @@
                         <viewLayoutGuide key="safeArea" id="U8H-bk-4jT"/>
                     </view>
                     <navigationItem key="navigationItem" id="JNt-aZ-3PB"/>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="eZt-qB-3Wz" id="Eun-QI-c6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tI5-Mb-Lc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xq6-Ap-oI8" userLabel="Exit" sceneMemberID="exit"/>
@@ -166,7 +169,6 @@
         <!--Navigation Controller-->
         <scene sceneID="P51-kz-AIx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwl-2a-k7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="VQz-hC-iN1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CWc-FT-pz6">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -176,6 +178,7 @@
                         <segue destination="XQZ-bL-nMu" kind="relationship" relationship="rootViewController" id="aRn-Jx-RbA"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uwl-2a-k7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-670" y="171"/>
         </scene>

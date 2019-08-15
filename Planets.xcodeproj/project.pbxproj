@@ -16,6 +16,7 @@
 		E38946752304F18B00817AB1 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38946742304F18B00817AB1 /* PlanetsCollectionViewController.swift */; };
 		E38946772304F30100817AB1 /* PlanetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38946762304F30100817AB1 /* PlanetCollectionViewCell.swift */; };
 		E389467A2304FAA200817AB1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38946792304FAA200817AB1 /* SettingsViewController.swift */; };
+		E3A7BC822304FFEB00BC3714 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A7BC812304FFEB00BC3714 /* SettingsKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E38946742304F18B00817AB1 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
 		E38946762304F30100817AB1 /* PlanetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewCell.swift; sourceTree = "<group>"; };
 		E38946792304FAA200817AB1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = "Planets/View Controllers/SettingsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		E3A7BC812304FFEB00BC3714 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				9DDBBD1C211360E000A55978 /* Model Controller */,
 				E38946782304F30600817AB1 /* Views */,
 				9DDBBD1B211360DA00A55978 /* Resources */,
+				E3A7BC812304FFEB00BC3714 /* SettingsKeys.swift */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				E38946752304F18B00817AB1 /* PlanetsCollectionViewController.swift in Sources */,
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
 				E389467A2304FAA200817AB1 /* SettingsViewController.swift in Sources */,
+				E3A7BC822304FFEB00BC3714 /* SettingsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
